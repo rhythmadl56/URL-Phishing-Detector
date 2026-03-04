@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Phishing URL Detector</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="header">
+      <div class="badge"><span class="badge-dot"></span>Security Tool</div>
+      <h1>Phishing URL<br>Detector</h1>
+      <p class="subtitle">Analyze any link for phishing signals<br>and threat indicators instantly.</p>
+    </header>
+
+    <section class="input-section">
+      <div class="input-glow-wrap" id="glowWrap">
+        <div class="input-inner">
+          <svg class="input-icon" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.4" fill="none" />
+            <path d="M8 5.5V8.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            <circle cx="8" cy="10.75" r="0.85" fill="currentColor" />
+          </svg>
+          <input type="url" id="urlInput" placeholder="https://example.com" autocomplete="off" autocorrect="off"
+            autocapitalize="off" spellcheck="false" inputmode="url" aria-label="URL to analyze" />
+          <button class="check-btn" id="checkBtn">Check URL</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" role="separator"></div>
+
+    <section id="result" aria-live="polite">
+      <div class="empty-state">
+        <span class="empty-icon" aria-hidden="true">⬡</span>
+        Enter a URL above to begin analysis.<br>Results will appear here.
+      </div>
+    </section>
+
+    <footer class="footer">
+      Heuristic analysis only — not a substitute for professional security tools.<br>
+      Always verify links from trusted sources.
+    </footer>
+  </div>
+</body>
+<script src="static/script.js"></script>
+</html>
