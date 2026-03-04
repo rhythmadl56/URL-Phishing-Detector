@@ -1,4 +1,4 @@
-# Phishing URL Detector
+# Phishing URL Detector 🥷🏻
 
 A lightweight web-based tool that analyzes URLs and identifies potential phishing attempts using heuristic detection techniques.
 
