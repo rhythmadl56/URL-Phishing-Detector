@@ -155,4 +155,4 @@ Possible enhancements include:
 
 ## License
 
-This project is open-source and available for educational use.
+This project is licensed under the MIT License.
